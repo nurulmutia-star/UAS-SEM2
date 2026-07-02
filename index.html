@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-card">
+        <h1>⚡ Premium Task Manager</h1>
+        <p class="subtitle">Kelola tugas kuliahmu dengan gaya gokil.</p>
+        
+        <form id="todo-form">
+            <div class="input-group">
+                <input type="text" id="nama_tugas" placeholder="Nama Tugas apa?" required>
+                <input type="text" id="mata_kuliah" placeholder="Mata Kuliah?" required>
+                <input type="date" id="deadline" required>
+            </div>
+            <button type="submit" class="btn-submit">Tambah Tugas</button>
+        </form>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tugas</th>
+                        <th>Mata Kuliah</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="tugas-list">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
